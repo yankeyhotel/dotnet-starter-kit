@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 namespace prismic.mvc.starter.Controllers
 {
 	public class HomeController : Controller
-	{
-		public async Task<ActionResult> Index (int page = 1)
+    {
+        public async Task<ActionResult> Index(int page = 1)
 		{
             var ctx = await getContext();
 			var response = await ctx.Api.Form("everything").Ref (ctx.MaybeRef).PageSize (10).Page (page).Submit ();

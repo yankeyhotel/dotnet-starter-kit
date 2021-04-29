@@ -7,7 +7,7 @@ namespace prismic.mvc.starter
 {
 	public class PrismicContext
 	{
-		readonly prismic.Api api;
+		readonly prismic.Api api;	
 		readonly string endpoint;
 		readonly string maybeRef;
 		readonly prismic.DocumentLinkResolver linkResolver;
